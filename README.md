@@ -48,13 +48,13 @@ A modern, responsive restaurant website built using HTML, CSS, JavaScript. The s
   
 
 ## How to Use
-1.Navigate through the website using the navigation bar.
-2.Explore food menu and offer on your comfort food.
-3.Use the add cart option to order food.
-4.Contact the team for any inquires or assistance.
+- Navigate through the website using the navigation bar.
+- Explore food menu and offer on your comfort food.
+- Use the add cart option to order food.
+- Contact the team for any inquires or assistance.
 
 ## Future Enhancements
--Adding user account for personalied experiances.
+- Adding user account for personalied experiances.
 - Intergrating real-time booking APIs.
 - Login with Google and Fackbook.
 - contact section connect with Backend and Database for authorization and autheuication.

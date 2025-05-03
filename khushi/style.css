@@ -1,3 +1,321 @@
+<<<<<<< HEAD
+/* ------------------------ menu section-------------------- */
+
+.menu{
+    width: 100%;
+    padding: 100px;
+}
+
+.menu h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.menu h1 span{
+    color: #fac031;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+.menu h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+.menu .menu-box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:15px; 
+}
+.menu .menu-box .menu-card{
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.menu .menu-box .menu-card .menu-image{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow:hidden;
+}
+
+.menu .menu-box .menu-card .menu-image img{
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+.menu .menu-box .menu-card .menu-image:hover img{
+    transform: scale(1.1);
+}
+.menu .menu-box .menu-card .small-card{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -240px;
+    right: -8px;
+    opacity: 1;
+    border-radius: 7px;
+}
+.menu .menu-box .menu-card:hover.small-card{
+    position: relative;
+    top: -240px;
+    right: 20px;
+    opacity: 1;
+}
+.menu .menu-box .menu-card .small-card i{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    color: #000;
+    cursor: pointer;
+    text-shadow: 0 0 6px #000;
+    transition: 0.2s;
+}
+.menu .menu-box .menu-card .small-card i:hover{
+    color: #fac031;
+}
+.menu .menu-box .menu-card .menu-information h2{
+    width: 60px;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: #fac031;
+}
+.menu .menu-box .menu-card .menu-information p{
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
+}
+    
+.menu .menu-box .menu-card .menu-information h3{
+ text-align: center;
+ margin-top: 10px;
+}
+.menu .menu-box .menu-card .menu-information .menu-icons{
+    color: #fac031;   
+    text-align: center;
+    margin: 10px 0 20px 0;
+}  
+.menu .menu-box .menu-card .menu-information .menu-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background:#000 ;
+    padding: 8px  10px;
+    margin: 0 80px;
+    transition: 0.3s;
+}
+
+
+/* ----------------------Gallary---------------- */
+
+.gallary{
+    width: 100%;
+    padding: 70px 0;
+}
+.gallary h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallary h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family:mv boli ;
+}
+.gallary h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+.gallary .gallary-image-box{
+    width: 95%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:10px;
+}
+.gallary .gallary-image-box .gallary-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:black ;
+}
+.gallary .gallary-image-box .gallary-image img{
+    width: 100%;
+    transition: 0.3s;
+}
+.gallary .gallary-image-box .gallary-image:hover img{
+    opacity: 0.4;
+}
+.gallary .gallary-image-box .gallary-image h3{
+    position: absolute;
+    font-size: 35px;
+    margin-bottom: 130px;
+    color: #fac031;
+    font-family: polo;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+}
+.gallary .gallary-image-box .gallary-image:hover h3{
+    opacity: 1;
+}
+.gallary .gallary-image-box .gallary-image p{
+    position: absolute;
+    width: 400px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    line-height: 22px;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.3s;
+}
+.gallary .gallary-image-box .gallary-image:hover p{
+    opacity: 1;
+}
+.gallary .gallary-image-box .gallary-image .gallary-btn{
+    position: absolute;
+    margin-top: 180px;
+    color: #000;
+    background: #fac031;
+    padding: 7px 25px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translate(45px);
+    z-index: 5;
+    transition: 0.3s;
+}
+.gallary .gallary-image-box .gallary-image:hover .gallary-btn{
+    opacity: 1;
+    transform: translate(0);
+}
+
+
+/* -------------------------- Review-------------------- */
+
+.review{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+
+.review h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: mv boli;
+}
+
+.review h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    bottom: 15px;
+    position: relative;
+    display: flex;
+}
+
+.review .review-box{
+    width: 95%;
+    margin: 70px auto;
+    display: flex;
+}
+.review .review-box .review-card{
+    width: 100%;
+    height: 535px;
+    border-radius: 7px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+    padding: 8px 20px;
+    margin: 0 8px;
+}
+.review .review-box .review-card .review-profile{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+}
+
+.review .review-box .review-card:hover .review-profile{
+    transform: translateY(-60px);
+}
+.review .review-box .review-card .review-profile img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid #cccccc;
+}
+.review .review-box .review-card .review-text{
+    text-align: center;
+}
+.review .review-box .review-card .review-text .name{
+    color: #000;
+    transition: .3s;
+}
+.review .review-box .review-card:hover .review-text .name{
+    transform: translatey(-50px);
+}
+.review .review-box .review-card .review-text .review-icons{
+    color: #fac031;
+    transition: 0.3s;
+} 
+.review .review-box .review-card:hover .review-text .review-icons{
+    transform: translatey(-30px);
+}
+.review .review-box .review-card .review-text .review-social i{
+    margin: 5px 10px;
+    font-size: 15px;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.review .review-box .review-card:hover .review-text .review-social i{
+    opacity: 1;
+    transform: translatey(-8px);
+}
+.review .review-box .review-card .review-text p{
+    text-align: center;
+    list-style: 22px;
+    transition: 0.3s;
+}
+.review .review-box .review-card:hover .review-text p{
+    margin-top: 5px;
+}
+
+
+=======
 *{
     margin: 0;
     padding: 0;
@@ -189,3 +507,4 @@ section .main .men_text h1 span{
     left: 55%;
     bottom: 30px;
   }
+>>>>>>> 59cafe60dc166fb6b0b5251a4fe5bdb887933425
